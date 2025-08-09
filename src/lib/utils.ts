@@ -15,9 +15,13 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
-export function getYouTubeThumbnail(videoId: string, quality: 'default' | 'medium' | 'high' | 'standard' | 'maxres' = 'maxresdefault'): string {
-  return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`
+export function getYouTubeThumbnail(
+  videoId: string,
+  quality: 'default' | 'medium' | 'high' | 'standard' | 'maxres' | 'maxresdefault' = 'maxresdefault'
+): string {
+  return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
+
 
 export function getYouTubeEmbedUrl(videoId: string): string {
   return `https://www.youtube.com/embed/${videoId}`
